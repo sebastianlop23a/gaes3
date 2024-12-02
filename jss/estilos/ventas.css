@@ -1,0 +1,158 @@
+/* Restablecer márgenes y paddings globalmente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el borde y padding no afecten el ancho */
+}
+
+/* Asegura que el cuerpo y la ventana del navegador ocupen el 100% */
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo general del body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    display: flex;
+    flex-direction: column; /* Apila los elementos (header, main, footer) verticalmente */
+}
+
+/* Tema oscuro */
+body.dark {
+    background-color: #1e1e1e;
+    color: #ddd;
+}
+
+header.dark, footer.dark {
+    background-color: #000;
+    color: #fff;
+}
+
+main.dark {
+    background-color: #2a2a2a;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    position: relative; /* El pie de página ya no está fijo */
+}
+
+/* Estilo para el contenedor principal */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 10px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Enlaces del menú */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Elementos del menú */
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Botones */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 20px;
+}
+
+/* Canvas */
+canvas {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+th.dark {
+    background-color: #444;
+}
+
+/* Estilo para los elementos de la lista dentro de las Acciones Rápidas */
+section ul li {
+    margin-bottom: 10px; /* Espacio entre cada elemento de la lista (espacio entre botones) */
+}
+
+/* Estilo para los botones dentro de las Acciones Rápidas */
+#actionButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Hacer que los botones ocupen el 100% del ancho de su contenedor */
+    transition: background-color 0.3s;
+}
+
+/* Efecto hover para los botones */
+#actionButton:hover {
+    background-color: #0056b3;
+}
