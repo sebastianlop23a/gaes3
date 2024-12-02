@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Inventarios - Inicio</title>
+    <link rel="stylesheet" href="estilos/inicio.css">
+    
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Bienvenido a Nuestro Gestor de Inventarios</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="panel.html">Panel</a></li>
+                <li><a href="inventario.html">Inventario</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="ventas.html">Ventas</a></li>
+                <li><a href="reportes.html">Reportes</a></li>
+                <li><a href="configuracion.html">Configuración</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Barra superior con contador, rol y usuario -->
+    <div class="top-bar">
+        <div id="contador">
+            <h3>Contador: <span id="counterValue">0</span></h3>
+        </div>
+        <div>
+            <h3>Rol: Administrador</h3>
+        </div>
+        <div>
+            <h3>Bienvenido, Sebastián</h3>
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Formulario de Inicio de Sesión -->
+        <section id="login-form">
+            <h2>Inicio de Sesión</h2>
+            <form action="ventas.html" method="GET">
+                <label for="document">Número de Documento</label>
+                <input type="text" id="document" name="document" placeholder="Ingrese su número de documento" required>
+                
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Ingrese su contraseña" required>
+                
+                <button type="submit" id="actionButton">Iniciar sesión</button>
+            </form>
+        </section>
+        
+
+        <!-- Imagen -->
+        <section class="image-container">
+            <img src="ima/imag_inicio-removebg-preview.png" width="2000" height="1800">
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+        <p>Para soporte técnico, contacta a tu administrador.</p>
+    </footer>
+
+    <script>
+        // Contador simple de ejemplo
+        let counter = 0;
+        setInterval(() => {
+            counter++;
+            document.getElementById('counterValue').textContent = counter;
+        }, 1000);
+    </script>
+</body>
+</html>

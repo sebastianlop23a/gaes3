@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel - Gestor de Inventarios</title>
+    <link rel="stylesheet" href="estilos/ventas.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Panel de Control</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="panel.html">Panel</a></li> <!-- Enlace al Panel de Control -->
+                <li><a href="inventario.html">Inventario</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="ventas.html">Ventas</a></li>
+                <li><a href="reportes.html">Reportes</a></li>
+                <li><a href="configuracion.html">Configuración</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido del Panel de Control -->
+    <main>
+        <h2>Resumen del Sistema</h2>
+        <p>Aquí puedes ver un resumen de las métricas más importantes, como el estado del inventario, las ventas realizadas y los clientes registrados.</p>
+
+        <!-- Sección de Estadísticas Clave -->
+        <section>
+            <h3>Estadísticas Clave</h3>
+                <!-- Sección de Gráfica -->
+            <h3>Gráfico de Ventas del mes </h3>
+            <canvas id="mi_tabla_del_mes" width="400" height="200"></canvas> <!-- Aquí se dibuja la gráfica -->
+        </section>
+        
+
+        <!-- Sección de Gráfica -->
+        <section>
+            <h3>Gráfico de Ventas</h3>
+            <canvas id="mi_tabla_del_año" width="400" height="200"></canvas> <!-- Aquí se dibuja la gráfica -->
+        </section>
+
+        <!-- Sección de Últimas Actividades -->
+        <section>
+            <h3>Últimas Actividades</h3>
+            <ul>
+                <li>Producto "X" agregado al inventario.</li>
+                <li>Cliente "Y" registrado.</li>
+                <li>Venta de "Z" realizada.</li>
+                <li>Reporte de inventario generado.</li>
+            </ul>
+        </section>
+
+        <!-- Sección de Acciones Rápidas -->
+        <section>
+            <h3>Acciones Rápidas</h3>
+            <ul>
+                <li> <a href="inventario.html"><button id="actionButton">registrar nuevo productos</button></a>
+                <li> <a href="clientes.html"><button id="actionButton">registrar nuevo cliente</button></a>
+                <li> <a href="ventas.html"><button id="actionButton">generar nuevo usuario</button></a>
+                <li> <a href="reportes.html"><button id="actionButton">generar reporte </button></a>
+            </ul>
+        </section>
+        
+    </main>
+<!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+        <p>Para soporte técnico, contacta a tu administrador.</p>
+    </footer>
+    
+
+    <!-- Vincula tu archivo JavaScript para la gráfica -->
+    <script src="javascrip/ventas.js"></script> <!-- Asegúrate de tener el archivo grafica.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>

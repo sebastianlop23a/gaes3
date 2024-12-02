@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Añadir esto para que el borde y padding no afecten el ancho */
+}
+
+body, html {
+    width: 100%; /* Asegura que el body y html ocupen todo el ancho de la página */
+    height: 100%; /* Asegura que la altura ocupe el 100% de la ventana */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100%; /* Asegura que el body tenga una altura mínima de 100% */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed; /* Lo fija al fondo de la pantalla */
+    bottom: 0; /* Coloca el pie de página al fondo */
+    width: 100%; /* Ancho al 100% */
+    left: 0; /* Asegura que no haya desplazamiento horizontal */
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 10px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Estilo para los botones */
+button {
+    padding: 10px 20px; /* Relleno interno de 10px arriba/abajo y 20px izquierda/derecha */
+    background-color: #007bff; /* Color de fondo azul */
+    color: #fff; /* Texto blanco */
+    border: none; /* Elimina el borde predeterminado */
+    cursor: pointer; /* Muestra un cursor de puntero para indicar que es clickeable */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    gap: 20px; /* Espacio entre cada grupo de elementos */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre cada campo de formulario */
+}
+
+label {
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo de entrada */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los grupos de campos del formulario */
+    background-color: #f9f9f9; /* Fondo claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Coloca la etiqueta y el campo uno debajo del otro */
+}
+
+label {
+    font-weight: bold; /* Resalta la etiqueta */
+    margin-bottom: 8px; /* Espacio entre la etiqueta y el campo de entrada */
+    color: #333; /* Color de texto */
+}
+
+input {
+    padding: 10px; /* Espaciado interno del campo */
+    font-size: 1rem; /* Tamaño de la fuente */
+    border: 1px solid #ccc; /* Borde ligero */
+    border-radius: 5px; /* Bordes redondeados */
+    outline: none; /* Elimina el contorno predeterminado */
+    transition: border-color 0.3s; /* Animación para cambios de borde */
+}
+
+input:focus {
+    border-color: #007bff; /* Color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra suave al enfocar */
+}
+
+button {
+    padding: 12px 20px; /* Relleno del botón */
+    background-color: #007bff; /* Fondo azul */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de la fuente */
+    cursor: pointer; /* Cursor de puntero */
+    transition: background-color 0.3s, transform 0.2s; /* Transición suave */
+}
+
+button:hover {
+    background-color: #0056b3; /* Fondo azul más oscuro al pasar el mouse */
+    transform: scale(1.02); /* Efecto de agrandamiento ligero */
+}
+
+#clientTable {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    border-collapse: collapse; /* Elimina los espacios entre bordes */
+    margin-top: 20px; /* Espacio arriba de la tabla */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+#clientTable th, 
+#clientTable td {
+    border: 1px solid #ddd; /* Borde ligero */
+    padding: 10px; /* Espaciado interno */
+    text-align: left; /* Texto alineado a la izquierda */
+}
+
+#clientTable th {
+    background-color: #007bff; /* Fondo azul para encabezados */
+    color: #fff; /* Texto blanco */
+    font-weight: bold; /* Resalta el encabezado */
+}
+
+#clientTable tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fondo gris claro para filas pares */
+}
+
+#clientTable tr:hover {
+    background-color: #f1f1f1; /* Fondo más claro al pasar el mouse */
+}
+
+#clientTable td {
+    color: #333; /* Color del texto */
+    font-size: 0.9rem; /* Tamaño del texto */
+}
